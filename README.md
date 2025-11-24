@@ -1,101 +1,48 @@
-Nike and Adidas Product Segmentation
-Python
-License
-Unsupervised Learning
-Open In Colab
-A real-world unsupervised machine learning project that automatically segments Nike and Adidas products and customers using clustering — no labels required.
-Project Objective
-Discover hidden customer segments and product groupings by applying K-Means, Hierarchical Clustering, PCA, t-SNE, and UMAP on real Nike & Adidas e-commerce data.
-Key business questions answered:
+# Nike and Adidas Product Segmentation using Unsupervised Learning
 
-Which customer segments prefer Nike vs Adidas?
-What are the premium, mid-tier, and value-for-money product clusters?
-How do price, rating, and review volume drive brand perception?
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shreekrithi1/Nike-and-Adidas-Product-Segmentation/blob/main/Nike_and_Adidas_Product_Segmentation.ipynb)
 
-Key Findings
+A complete **unsupervised machine learning** project that automatically discovers hidden customer and product segments for **Nike** and **Adidas** using real e-commerce data — no labels needed.
 
-Nike dominates high-rating, premium-priced clusters
-Adidas leads in value-for-money & mid-range segments
-4–5 natural customer clusters emerge using the Elbow + Silhouette method
-Clear separation visible in 2D/3D visualizations (PCA & t-SNE)
+## Project Goal
+Apply clustering and dimensionality reduction to answer:
+- Which customer segments prefer Nike vs Adidas?
+- What are the natural product tiers (premium, mid-range, value)?
+- How do price, rating, and review volume shape brand perception?
 
-Dataset
-Public Nike vs Adidas dataset (~3,000+ products) with the following features:
+## Key Findings
+- Nike dominates **high-rating, premium-priced** clusters
+- Adidas leads in **value-for-money & mid-tier** segments
+- 4–5 optimal clusters identified using Elbow Method + Silhouette Score
+- Clear brand separation visible in PCA, t-SNE, and UMAP visualizations
 
+## Dataset
+Public Nike vs Adidas dataset with ~3,000+ products.
 
+| Feature         | Description                          |
+|-----------------|--------------------------------------|
+| Product Name    | Name of the product                  |
+| Product ID      | Unique identifier                    |
+| Brand           | Nike / Adidas                        |
+| Category        | Men/Women/Kids, Shoes/Clothing       |
+| Listed Price    | Original price (₹)                   |
+| Sale Price      | Discounted price (₹)                 |
+| Rating          | Average customer rating (1–5)        |
+| Reviews         | Number of reviews                    |
+| Description     | Product description text             |
 
+## Techniques Used
+- Exploratory Data Analysis (EDA)
+- Feature Engineering & Standardization
+- K-Means Clustering
+- Hierarchical (Agglomerative) Clustering
+- Optimal cluster selection → Elbow + Silhouette Score
+- Dimensionality Reduction → PCA, t-SNE, UMAP
+- Visualizations → Matplotlib, Seaborn, Plotly
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ColumnDescriptionProduct NameName of the productProduct IDUnique IDBrandNike / AdidasCategoryMen/Women/Kids, Shoes/ClothingListed PriceOriginal price (₹)Sale PriceDiscounted price (₹)RatingAverage rating (out of 5)ReviewsNumber of customer reviewsDescriptionProduct description text
-Techniques Used
-
-Exploratory Data Analysis (EDA)
-Feature Engineering & Scaling
-K-Means Clustering
-Hierarchical (Agglomerative) Clustering
-Optimal clusters → Elbow Method + Silhouette Score
-Dimensionality Reduction: PCA, t-SNE, UMAP
-Rich visualizations with Matplotlib, Seaborn & Plotly
-
-Requirements
-txtpandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-plotly
-wordcloud
-Install with:
-Bashpip install pandas numpy scikit-learn matplotlib seaborn plotly wordcloud
-Quick Start
-Option 1: Run in Google Colab (Recommended)
-Open In Colab
-Option 2: Local
-Bashgit clone https://github.com/shreekrithi1/Nike-and-Adidas-Product-Segmentation.git
-cd Nike-and-Adidas-Product-Segmentation
-jupyter notebook "Nike_and_Adidas_Product_Segmentation.ipynb"
-Project Structure
-text├── Nike_and_Adidas_Product_Segmentation.ipynb   ← Main notebook (full analysis)
-├── data/                                        ← Dataset folder (if added)
-├── README.md                                    ← You are here
-└── requirements.txt                             ← Dependencies
+## Requirements
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn plotly wordcloud
