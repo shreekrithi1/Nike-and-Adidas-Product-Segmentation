@@ -46,3 +46,18 @@ Public Nike vs Adidas dataset with ~3,000+ products.
 ## Requirements
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn plotly wordcloud
+
+
+
+Quick Start
+
+git clone https://github.com/shreekrithi1/Nike-and-Adidas-Product-Segmentation.git
+cd Nike-and-Adidas-Product-Segmentation
+jupyter notebook "Nike_and_Adidas_Product_Segmentation.ipynb"
+
+
+**Project Structure**
+text├── Nike_and_Adidas_Product_Segmentation.ipynb   ← Full analysis notebook
+├── data/                                        ← Dataset (optional)
+├── README.md                                    ← This file
+└── requirements.txt                             ← Dependencies
